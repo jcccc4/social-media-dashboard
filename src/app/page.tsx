@@ -3,7 +3,7 @@ import SocialMedia from "@/app/components/SocialMedia";
 export default function Home() {
   return (
     <>
-      <section className="bg-[#F7F9FF] absolute top-0 left-0 w-screen h-[216px] rounded-b-[20px] -z-10 dark:bg-[#20222F]"></section>
+      <section className="bg-[#F7F9FF] absolute top-0 left-0 w-full h-[216px] rounded-b-[20px] -z-10 dark:bg-[#20222F]"></section>
 
       <main className="relative mt-9 m-6 x-6 mb-[45px] ">
         <Header />
