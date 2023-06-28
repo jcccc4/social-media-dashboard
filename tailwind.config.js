@@ -13,7 +13,8 @@ module.exports = {
         p: ["14px", "17px"],
         username: ["12px", "15px"],
         followerCount: ["56px", "48px"],
-    
+        statistics: ['14px','17px'],
+        statisticsNumber: ['32px','39px']
       },
     },
   },

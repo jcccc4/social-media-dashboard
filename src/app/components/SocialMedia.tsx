@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 type Props = {
-  border: String;
-  username: String;
-  followerCount: String;
-  followerNetChange: Number;
-  description:String;
-  icon: String;
+  border: string;
+  username: string;
+  followerCount: string;
+  followerNetChange: number;
+  description:string;
+  icon: string;
+  alternateText:string;
+  hasFollowerGain: (netChange: number) => boolean;
 };
 function SocialMedia({
   username,
@@ -15,6 +17,8 @@ function SocialMedia({
   border,
   icon,
   description,
+  alternateText,
+  hasFollowerGain
 }: Props) {
   return (
     <section
@@ -27,7 +31,7 @@ function SocialMedia({
               src={`/${icon}`}
               height={20}
               width={20}
-              alt="Facebook Icon"
+              alt={alternateText}
             />
             {username}
           </li>
@@ -35,15 +39,24 @@ function SocialMedia({
             {followerCount.toString()}
           </li>
           <li className="text-username mt-[9px] tracking-[5px]">{description}</li>
-          <li className="mt-[24px] font-bold text-username text-[#1EB589] flex items-center gap-1">
-            <Image
-              src="/icon-up.svg"
-              height={4}
-              width={8}
-              alt="Follower Gain"
-            />
+          <li className={`mt-[24px] font-bold text-username flex items-center gap-1 ${hasFollowerGain(followerNetChange) ? "text-[#1EB589]" : "text-[#DC414C]"}`}>
+          {hasFollowerGain(followerNetChange) ? (
+              <Image
+                src="/icon-up.svg"
+                height={4}
+                width={8}
+                alt="Follower Gain"
+              />
+            ) : (
+              <Image
+                src="/icon-down.svg"
+                height={4}
+                width={8}
+                alt="Follower Loss"
+              />
+            )}
             <span>
-              <span>{followerNetChange.toString()}</span> Today
+              <span>{Math.abs(followerNetChange).toString()}</span> Today
             </span>
           </li>
         </ul>
