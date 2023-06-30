@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <section className="bg-[#F7F9FF] absolute top-0 left-0 w-full h-[216px] rounded-b-[20px] -z-10 dark:bg-[#20222F]"></section>
 
-      <main className="relative mt-9 mx-6 mb-[45px]">
+      <main className="relative mt-9 mx-6 mb-[45px] ">
         <Header />
         <SocialMediaList hasFollowerGain={hasFollowerGain} />
         <Overview hasFollowerGain={hasFollowerGain}/>

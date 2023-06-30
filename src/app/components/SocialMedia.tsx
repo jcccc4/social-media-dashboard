@@ -24,9 +24,9 @@ function SocialMedia({
     <section
       className={`mt-10 pt-1 w-full rounded-[5px] ${border}`}
     >
-      <section className={` bg-[#F1F3FA] w-full h-auto rounded-b-[5px] `}>
+      <section className={` bg-[#F1F3FA] w-full h-auto rounded-b-[5px] dark:bg-[#252B42]`}>
         <ul className="flex flex-col items-center h-[216px]">
-          <li className="flex mt-8 gap-x-2 font-bold items-center text-[#63687D]">
+          <li className="flex mt-8 gap-x-2 font-bold items-center text-[#63687D] dark:text-[#8C98C6]">
             <Image
               src={`/${icon}`}
               height={20}
@@ -38,7 +38,7 @@ function SocialMedia({
           <li className="text-followerCount font-bold mt-7 tracking-[-2px]">
             {followerCount.toString()}
           </li>
-          <li className="text-username mt-[9px] tracking-[5px]">{description}</li>
+          <li className="text-username mt-[9px] tracking-[5px] dark:text-[#8C98C6]">{description}</li>
           <li className={`mt-[24px] font-bold text-username flex items-center gap-1 ${hasFollowerGain(followerNetChange) ? "text-[#1EB589]" : "text-[#DC414C]"}`}>
           {hasFollowerGain(followerNetChange) ? (
               <Image
