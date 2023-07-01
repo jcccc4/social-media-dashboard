@@ -16,6 +16,12 @@ module.exports = {
         statistics: ['14px','17px'],
         statisticsNumber: ['32px','39px']
       },
+      gridTemplateRows: {
+        socialMedia: "repeat(1,1fr)",
+      },
+      gridTemplateColumns: {
+        socialMedia: "repeat(auto-fit, minmax(255px, 1fr))",
+      },
     },
   },
   plugins: [],

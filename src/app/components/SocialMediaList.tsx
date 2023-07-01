@@ -6,7 +6,7 @@ type Props = {
 
 export default function SocialMediaList({ hasFollowerGain }: Props) {
   return (
-    <div className="lg:flex w-full lg:justify-between lg:flex-wrap">
+    <div className="lg:grid w-full lg:gap-[30px] lg:grid-cols-socialMedia lg:grid-rows-socialMedia ">
       <SocialMedia
         border="bg-[#178FF5]"
         username="@nathanf"

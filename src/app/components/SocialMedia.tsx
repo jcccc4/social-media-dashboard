@@ -22,7 +22,7 @@ function SocialMedia({
 }: Props) {
   return (
     <section
-      className={`mt-10 pt-1 w-full rounded-[5px] ${border} lg:w-[255px] lg:mt-[46px]`}
+      className={`mt-10 pt-1 w-full rounded-[5px] ${border} lg:mt-[46px]`}
     >
       <section className={` bg-[#F1F3FA] w-full h-auto rounded-b-[5px] dark:bg-[#252B42]`}>
         <ul className="flex flex-col items-center h-[216px]">
