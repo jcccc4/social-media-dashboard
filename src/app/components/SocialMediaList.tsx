@@ -6,7 +6,7 @@ type Props = {
 
 export default function SocialMediaList({ hasFollowerGain }: Props) {
   return (
-    <>
+    <div className="lg:flex w-full lg:justify-between lg:flex-wrap">
       <SocialMedia
         border="bg-[#178FF5]"
         username="@nathanf"
@@ -47,6 +47,6 @@ export default function SocialMediaList({ hasFollowerGain }: Props) {
         alternateText="Youtube Icon"
         hasFollowerGain={hasFollowerGain}
       />
-    </>
+    </div>
   );
 }

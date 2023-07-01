@@ -8,7 +8,7 @@ export default function Overview({ hasFollowerGain }: Props) {
   return (
     <section className="mt-[46px] w-full  ">
       <h1 className="text-[#63687D]">Overview - Today</h1>
-      <ul className="mt-[27px]  flex flex-col gap-4">
+      <ul className="mt-[27px] lg:mt-6 flex flex-col gap-4 lg:flex-row w-full lg:justify-between lg:flex-wrap">
         <OverviewStat
           icon="icon-facebook.svg"
           alternateText="Facebook Icon"

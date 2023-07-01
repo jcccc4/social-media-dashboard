@@ -18,9 +18,9 @@ function OverviewStat({
   hasFollowerGain,
 }: Props) {
   return (
-    <li className="h-[125px] px-6 pt-[26px] bg-[#F1F3FA] rounded-[5px] dark:bg-[#252B42]">
+    <li className="h-[125px] px-6 pt-[26px] bg-[#F1F3FA] rounded-[5px] dark:bg-[#252B42] lg:w-[255px] lg:h-[125px]">
       <ul>
-        <li className="flex justify-between items-center text-statistics font-bold">
+        <li className="flex justify-between items-center text-statistics font-bold ">
           <span className="dark:text-[#8C98C6]">{statistic}</span>
           <Image src={`/${icon}`} height={20} width={20} alt={alternateText} />
         </li>
